@@ -1,0 +1,737 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 5s;
+}
+.nav{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-left{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 20%;
+   margin-left: 5vmax;
+}
+.nav-middle a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    margin-right: 2vmax;
+}
+.nav-middle a:hover{
+    border-bottom: 2px solid black;
+}
+.nav-right i{
+    font-size: 32px;
+    margin-right: 2vmax;
+    align-items: center;
+    cursor: pointer;
+}
+/* .nav .menu{
+    font-size: 3vmax;
+    display: none;
+} */
+/* .nav-mobmiddle{
+    display: none;
+} */
+
+/*  _______________________________scroll image____________________  */
+    
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #0e0d0d;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 700px;
+  /* margin-right: 10px; */
+  background: hsl(0, 0%, 20%);
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+          margin-top: -22%;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+.cell{
+    display: inline-block;
+    font-size: 3vmax;
+    transform: translate(15vmax, 8vmax );
+    line-height: 6vmax;
+    color: white;
+    letter-spacing: 0.3vmax;
+
+    
+}
+.cell button{
+    font-size: 1.5vmax;
+    padding: 1vmax 2vmax 1vmax 2vmax;
+    background-color: rgb(175, 168, 168);
+    border: none;
+    cursor: pointer;
+    
+}
+/* ___________________________________________________ */
+
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+.page2 .dot{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(68, 63, 63);
+}
+.page2 .star{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.page2 .star .cont-1 {
+    width: 30%;
+    height: 80%;
+    background-image: url(https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=553&q=80);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+  padding-top: 13vmax;
+  line-height: 3.5vmax;
+  font-size: 1.3vmax;
+  position: relative;
+  
+}
+.page2  .layer{
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.397);
+    top: -0%;
+   
+    
+}
+.page2 .star i{
+    font-size: 7vmax;
+    
+}
+
+.page2 .star .cont-2 {
+    width: 30%;
+    height: 80%;
+    background-image: url(https://scontent.fbho2-1.fna.fbcdn.net/v/t1.6435-9/127714083_10159130210889235_1482330590265258565_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=973b4a&_nc_ohc=9n1SKZwVC7IAX86C38m&_nc_ht=scontent.fbho2-1.fna&oh=00_AfCl-57ihJET5RUsXKe8NLaByaBxhw3uUepU5hE7uzKNvA&oe=644748AD);
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+  padding-top: 13vmax;
+  line-height: 3.5vmax;
+  font-size: 1.3vmax;
+  position: relative;
+   
+}
+
+.page2 .star .cont-3 {
+    width: 30%;
+    height: 80%;
+    background-image: url(https://cdn0.hitched.co.uk/article/4382/original/1280/jpg/112834-laura-chouette-aztlgmp6osk-unsplash.jpeg);
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+  padding-top: 13vmax;
+  line-height: 3.5vmax;
+  font-size: 1.3vmax;
+  position: relative;
+   
+}
+.page3{
+    width: 100%;
+    height: 135%;
+    background-image: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image2-1170x780.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.page4{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page4 .left{
+    width: 30%;
+    text-align: center;
+}
+.page4 h1{
+    font-size: 8vmax;
+}
+.page4 h3{
+    font-size: 1vmax;
+}
+.page4 .middile{
+    width: 30%;
+    text-align: center;
+}
+.page4 .right{
+    width: 30%;
+    text-align: center;
+}
+.page4 button{
+    width: 15%;
+    padding: 1.5vmax 3.5vmax 1.5vmax 3.5vmax;
+    font-size: 1.2vmax;
+    background-color: rgb(119, 91, 54);
+    border: none;
+    color: white;
+    transform: translateY(-4vmax);
+    cursor: pointer;
+}
+.page5{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(218, 210, 210);
+    font-size: 1.7vmax;
+    line-height: 5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vmax;
+}
+.page5 span{
+    color: tan;
+}
+.page6{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.page6 .box1 img{
+    height: 200px;
+    width: 200px;
+    /* position: relative; */
+}
+.page6 .box1 .layer{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.page6 .box1 .layer:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.page7{
+    width: 100%;
+    height: 180%;
+    background-color: rgb(218, 210, 210);
+}
+.page7 .new{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vmax;
+}
+.page7 .image{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page7 .container{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.box{
+    position: absolute;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 48%; */
+    background-position: center;
+    background-size: cover;
+    /* height: 95%; */
+    object-fit: cover;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.box img{
+    transition: 0.5s;
+}
+.box img:hover{
+    transform: scale(1.2);
+}
+.page7 .footer{
+    width: 100%;
+    height: 15%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.page7 .footer .par1{
+    width: 45%;
+    height: 90%;
+    /* background-color: yellow; */
+   /* padding-top: 2vmax; */
+   line-height: 4vmax;
+    
+
+}
+.page7 .footer h1{
+    display: inline-block;
+
+}
+.page7 .footer h3{
+    display: inline-block;
+}
+.page7 .footer h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+.page7 .footer h4{
+    display: inline-block;
+    font-size: 2vmax;
+}
+.page7 .footer .par2{
+    width: 45%;
+    height: 90%;
+    /* background-color: rgb(255, 136, 0); */
+    line-height: 4vmax;
+}
+
+.page8{
+    width: 100%;
+    height: 150%;
+    background-color: rgb(218, 210, 210);
+}
+.page8 .image{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page8 .container{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.box{
+    position: absolute;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 48%; */
+    background-position: center;
+    background-size: cover;
+    /* height: 95%; */
+    object-fit: cover;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.box img{
+    transition: 0.5s;
+}
+.box img:hover{
+    transform: scale(1.2);
+}
+.page8 .footer{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.page8 .footer .par1{
+    width: 45%;
+    height: 90%;
+    /* background-color: yellow; */
+   /* padding-top: 2vmax; */
+   line-height: 4vmax;
+}
+.page8 .footer h1{
+    display: inline-block;
+
+}
+.page8 .footer h3{
+    display: inline-block;
+}
+.page8 .footer h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+.page8 .footer h4{
+    display: inline-block;
+    font-size: 2vmax;
+}
+.page8 .footer .par2{
+    width: 45%;
+    height: 90%;
+    /* background-color: rgb(255, 136, 0); */
+    line-height: 4vmax;
+}
+.page9{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    /* display: flex; */
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    /* overflow-x: scroll; */
+}
+.page9 .image1{
+width: 100%;
+height: 100%;
+background-color: white;
+position: absolute;
+line-height: 3vmax;
+padding-top: 4vmax;
+transition: 1.5s all linear;
+
+
+
+}
+.page9 .image2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    line-height: 3vmax;
+padding-top: 4vmax;
+transition: 1.5s all linear;
+
+
+}   
+.page9 .image3{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    line-height: 3vmax;
+padding-top: 4vmax;
+transition: 1.5s all linear;
+}
+.page9 p{
+    width: 60%;
+    font-size: 1.5vmax;
+    margin-left: 20vmax;
+}
+.page9 i{
+    font-size: 2vmax;
+}
+.page10{
+    width: 100%;
+    height: 20%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.page10 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.page10 button{
+    border-radius: 50%;
+    border: none;
+    margin: 0vmax 1.5vmax;
+}
+.page11{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 210, 210);
+}
+.page11 .top{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    font-size: 2vmax;
+    display: flex;
+    align-items: center;
+    padding: 5vmax;
+}
+.page11 .image{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page11 .container{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container .threeimage { 
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    object-fit: cover;
+    overflow: hidden;
+    
+} 
+.threeimage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.threeimage img:hover{
+    transform: scale(1.2);
+}
+.page11 .my{
+    width: 100%;
+    height: 20%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 2.5vmax;
+}
+.page11 .my h3{
+    font-size: 2.2vmax;
+    color: rgb(255, 255, 0);
+}
+.page12{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page12 .image1{
+    width: 48%;
+    height: 95%;
+    /* background-color: aqua; */
+}
+.page12 .image1 img{
+    width: 100%;
+    height: 100%;
+}
+.page12 .content{
+    width: 48%;
+    height: 95%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2vmax;
+}
+.page12 .content .button1{
+    width: 10%;
+ background-color: black;
+ color: white;
+ border: none;
+ padding: 0.5vmax 0vmax;
+}
+.page12 .content .button2{
+    width: 40%;
+    padding: 1.5vmax 4.5vmax;
+ background-color: black;
+ color: white;
+ font-size: 1.5vmax;
+ border: none;
+ cursor: pointer;
+}
+.page12 .content h1{
+    font-size: 4vmax;
+}
+.page12 .content h2 span{
+    color: red;
+}
+.page12 .content p{
+    line-height: 1.7vmax;
+}
+.page13{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.page13 .content1{
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page13 .left{
+    width: 20%;
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.page13 .left h4{
+    cursor: pointer;
+}
+.page13 .left .itag{
+    font-size: 1.5vmax;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5vmax;
+}
+.page13 .left .itag i{
+    border-radius: 5vmax;
+    /* background-color: red; */
+    padding: 0.5vmax;
+    text-align: center;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.page13 .left .itag i:hover{
+    color: gray;
+
+}
+.page13 .middile{
+    width: 30%;
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.page13 .middile input{
+    font-size: 1.5vmax;
+    /* border-bottom: 1px solid gray; */
+    border: none;
+    padding: 2vmax 0vmax;
+    /* text-align: center; */
+}
+.page13 .middile button{
+    width: 40%;
+    padding: 1.5vmax 0vmax;
+    font-size: 1.3vmax;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+.page13 .right{
+    width: 30%;
+    height: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -12vmax;
+}
+.page13 .right input{
+    font-size: 1.5vmax;
+    /* border-bottom: 1px solid gray; */
+    border: none;
+    padding: 2vmax 0vmax;
+
+    
+    /* text-align: center; */
+    
+}
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+.page13  input:hover{
+    border-bottom: 2px solid rgb(12, 12, 12);
+    animation: border_anim 1s linear forwards;
+    cursor: pointer;
+    
+}
+.page13 .last{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(195, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
