@@ -8,18 +8,22 @@ var image3 = document.querySelector(".page9 .image3")
 
 img1.addEventListener("click",function(){
     image1.style.opacity = "1";
+    image1.style.color = "red"
     image2.style.opacity = "0";
     image3.style.opacity = "0";
+
 })
 
-img2.addEventListener("click",function(){
+img2.addEventListener("click",function(){  
 image2.style.opacity = "1"
+image2.style.color = "blue"
 image3.style.opacity = "0";
 image1.style.opacity = "0";
 })
 
 img3.addEventListener("click",function(){
     image3.style.opacity = "1";
+    image3.style.color = "darkgreen"
     image2.style.opacity = "0";
     image1.style.opacity = "0";
 })
