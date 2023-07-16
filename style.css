@@ -861,7 +861,7 @@ transition: 1.5s all linear;
 .page13{
     height: 50%;
     /* background-color: rgb(5, 21, 250); */
-    background-color: red;
+/*     background-color: red; */
 }
 .page13 .content1{
     height: 60%;
